@@ -1,5 +1,7 @@
+version: 2026.232.0520
 java-openjdk:
     candy:
+        version: 2026.167.2100
         description: |
             OpenJDK 21 runtime + JDK tools with a distro-agnostic JAVA_HOME canonical symlink
             OpenJDK 21 headless runtime + JDK tools. Cross-distro: Fedora ships
