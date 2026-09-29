@@ -26,7 +26,11 @@ unset until `archlinux-java set` runs).
 
 ## How to use it
 
-Compose the layer by pinning this repo in a box's `candy:` list:
+Compose the layer by pinning this repo in a box's nested `candy:` list. In the
+real box schema an image is a single `candy:` node whose body carries `base:`
+**and** a nested `candy:` list (there is no box-level `base:` sibling — see
+`/charly-image:image` and a live example such as
+`distro-cachyos/box/comfyui/charly.yml`):
 
 ```yaml
 my-box:
