@@ -16,9 +16,6 @@ Canonical files:
 
 ## Load these skills first (R0)
 
-- `/charly-check:android` — the closest owning skill: the `kind: android` device
-  substrate whose SDK/Appium/emulator consumers this JDK backs. Load before
-  editing or troubleshooting the candy.
 - `/charly-image:layer` — the candy authoring reference (`charly.yml` schema,
   `plan:` step verbs incl. `check:`/`run:`, per-distro `distro:` arms, package
   sections, `env:`/`path_append:`). Load before editing any entity field or plan
