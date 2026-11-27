@@ -6,8 +6,8 @@ The `java-openjdk` candy installs OpenJDK 21 (headless runtime + JDK tools)
 cross-distro — Fedora ships `java-21-openjdk-headless`/`-devel`, Arch ships
 `jdk21-openjdk`, Debian/Ubuntu ship `openjdk-21-jdk-headless`. A build step
 symlinks a **distro-agnostic** `JAVA_HOME` (`/usr/lib/jvm/charly-jdk21`) onto
-whichever JDK 21 root the package installed, so consumers (Android SDK, Appium,
-Gradle, sbt) discover `java` and `javac` without hardcoding a distro path.
+whichever JDK 21 root the package installed, so consumers (Gradle, sbt) discover
+`java` and `javac` without hardcoding a distro path.
 
 On Arch/CachyOS the step also points `archlinux-java` at the installed JDK 21 so
 `/usr/bin/java` and `/usr/bin/javac` resolve (their `default-runtime` ships
@@ -60,9 +60,7 @@ echo "$JAVA_HOME"  # /usr/lib/jvm/charly-jdk21
 ## Related
 
 - Owning skill: none yet — this candy carries no `skill:` entity. Closest:
-  `/charly-check:android` (the `kind: android` substrate this JDK backs) and
   `/charly-image:layer` (candy authoring). The gap is tracked in
   [opencharly/opencharly#291](https://github.com/opencharly/opencharly/issues/291).
-- Consumer: `/charly-check:android` — Android SDK / Appium / emulator
 - [`opencharly/charly`](https://github.com/opencharly/charly) — the charly CLI and image builder
 - [`opencharly/opencharly`](https://github.com/opencharly/opencharly) — the umbrella
